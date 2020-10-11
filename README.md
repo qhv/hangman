@@ -8,6 +8,10 @@ Requirements
   * Ruby  
   + Be human (recommended)  
   
+Note
+----
+Guessing words are russian by default. See __Guessing Words__ chapter if you prefer another language.
+  
 Getting Started
 ---------------
 At the command prompt, go to the game directory and run:  
