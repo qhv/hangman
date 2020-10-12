@@ -1,6 +1,6 @@
 Hangman
 =======
-Hangman is a guessing game. Computer thinks of a word, and you tries to guess it by suggesting letters within a certain number of guesses.
+Hangman is a guessing game. Computer thinks of a word, and you try to guess it by suggesting letters within a certain number of guesses.
 [Wiki](https://en.wikipedia.org/wiki/Hangman_(game)) tells more about this game.
 
 Requirements
