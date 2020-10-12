@@ -10,10 +10,11 @@ class ConsoleInterface
 
   def print_out
     puts <<~END
+
       Слово: #{word_to_show}
       #{figure}
       Ошибки (#{@game.errors_made}): #{errors_to_show}
-      У вас осталось ошибок: #{@game.errors_allowed}
+      У вас осталось попыток: #{@game.errors_allowed}
 
     END
 
@@ -25,29 +26,25 @@ class ConsoleInterface
   end
 
   def figure
-    return FIGURES[@game.errors_made]
+    FIGURES[@game.errors_made]
   end
 
   def word_to_show
     result =
       @game.letters_to_guess.map do |letter|
-        if letter == nil
-          "__"
-        else
-          letter
-        end
+        letter.nil? ? "__" : letter
       end
 
-    return result.join(' ')
+    result.join(' ')
   end
 
   def errors_to_show
-    return @game.errors.join(', ')
+    @game.errors.join(', ')
   end
 
   def get_input
     print "Введите следующую букву: "
     letter = gets[0].upcase
-    return letter
+    letter
   end
 end
