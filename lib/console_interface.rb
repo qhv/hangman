@@ -44,7 +44,6 @@ class ConsoleInterface
 
   def get_input
     print "Введите следующую букву: "
-    letter = gets[0].upcase
-    letter
+    gets[0].upcase
   end
 end
